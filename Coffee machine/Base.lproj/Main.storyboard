@@ -14,27 +14,197 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cof1" translatesAutoresizingMaskIntoConstraints="NO" id="pVn-Wk-vGZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh3-tV-0mm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="35"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hzf-GZ-IVJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lox-fr-e5D">
+                                <rect key="frame" x="20" y="738" width="160" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="B4u-pR-tTU"/>
+                                    <constraint firstAttribute="height" constant="35" id="b3o-gD-TjW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Сделать кофе">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="drinks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wMX-GD-Kve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erD-qA-wI1">
+                                <rect key="frame" x="234" y="738" width="160" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7NQ-Rd-6bJ"/>
+                                    <constraint firstAttribute="width" constant="160" id="FAP-yu-P5s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Сделать еспрессо">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="drinks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SV8-uY-13S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-7X-ybC">
+                                <rect key="frame" x="127" y="797" width="160" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="q5d-dn-P9f"/>
+                                    <constraint firstAttribute="width" constant="160" id="tn5-fZ-AvW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Сделать капучино">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="drinks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQN-yt-YR6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pVn-Wk-vGZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="42N-93-r1Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pVn-Wk-vGZ" secondAttribute="bottom" id="6we-F1-OZU"/>
+                            <constraint firstItem="Lh3-tV-0mm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BSL-8q-ofc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpn-7X-ybC" secondAttribute="trailing" constant="127" id="Fzi-w3-O4J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bpn-7X-ybC" secondAttribute="bottom" constant="30" id="OJ5-mQ-rWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erD-qA-wI1" secondAttribute="trailing" constant="20" id="SlD-cf-Eo4"/>
+                            <constraint firstItem="bpn-7X-ybC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="V63-fl-96h"/>
+                            <constraint firstItem="pVn-Wk-vGZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VUu-vf-oXt"/>
+                            <constraint firstItem="Lh3-tV-0mm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bIB-u6-x3F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVn-Wk-vGZ" secondAttribute="trailing" id="g3a-D6-XhC"/>
+                            <constraint firstItem="lox-fr-e5D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gqZ-yz-DPl"/>
+                            <constraint firstItem="Lh3-tV-0mm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r5B-jj-CsP"/>
+                            <constraint firstItem="erD-qA-wI1" firstAttribute="top" secondItem="Lh3-tV-0mm" secondAttribute="bottom" constant="615" id="ubn-UM-fIE"/>
+                            <constraint firstItem="lox-fr-e5D" firstAttribute="top" secondItem="Lh3-tV-0mm" secondAttribute="bottom" constant="615" id="wMO-0c-6ZH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="iWD-Vm-dJS">
-                        <barButtonItem key="rightBarButtonItem" title="Добавить ингредиенты &gt;" id="QUD-Jn-WjY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Добавить ингредиенты &gt;" id="QUD-Jn-WjY">
+                            <connections>
+                                <segue destination="cFW-3H-T5o" kind="show" id="OxO-sV-BLt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textLabel" destination="Lh3-tV-0mm" id="VRP-xL-Z1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="99.776785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--IngridientsVC-->
         <scene sceneID="rnY-GL-xw7">
             <objects>
-                <viewController id="cFW-3H-T5o" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IngridientsVC" id="cFW-3H-T5o" customClass="IngridientsVC" customModule="Coffee_machine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xlu-q4-QUi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beans1" translatesAutoresizingMaskIntoConstraints="NO" id="CGM-SJ-Dns">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KK-Ym-XRF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="35"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="d7U-W3-gAO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aE6-fb-j0M">
+                                <rect key="frame" x="57" y="246" width="300" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mda-r6-eJL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Добавить воду">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addIngridients:" destination="cFW-3H-T5o" eventType="touchUpInside" id="ZsP-aD-EdD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxs-Ew-mgi">
+                                <rect key="frame" x="57" y="606" width="300" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="GRW-TY-69z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Добавить молока">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addIngridients:" destination="cFW-3H-T5o" eventType="touchUpInside" id="pol-yq-ONw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJM-qf-Xir">
+                                <rect key="frame" x="57" y="426" width="300" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="MUX-Qg-5Kt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Добавить зерна">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addIngridients:" destination="cFW-3H-T5o" eventType="touchUpInside" id="7GM-ZY-AHR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tJM-qf-Xir" firstAttribute="trailing" secondItem="Gxs-Ew-mgi" secondAttribute="trailing" id="5S3-fI-UgR"/>
+                            <constraint firstAttribute="bottom" secondItem="tJM-qf-Xir" secondAttribute="bottom" constant="425" id="8VK-49-bVd"/>
+                            <constraint firstItem="Bpi-Yz-reG" firstAttribute="trailing" secondItem="aE6-fb-j0M" secondAttribute="trailing" constant="57" id="9a3-6c-NNV"/>
+                            <constraint firstItem="Gxs-Ew-mgi" firstAttribute="top" secondItem="tJM-qf-Xir" secondAttribute="bottom" constant="135" id="A6C-pl-PlE"/>
+                            <constraint firstItem="tJM-qf-Xir" firstAttribute="trailing" secondItem="aE6-fb-j0M" secondAttribute="trailing" id="DO2-WG-aep"/>
+                            <constraint firstItem="Bpi-Yz-reG" firstAttribute="trailing" secondItem="CGM-SJ-Dns" secondAttribute="trailing" id="F2d-Cf-a57"/>
+                            <constraint firstItem="Bpi-Yz-reG" firstAttribute="trailing" secondItem="7KK-Ym-XRF" secondAttribute="trailing" id="ISG-vC-Qca"/>
+                            <constraint firstItem="CGM-SJ-Dns" firstAttribute="leading" secondItem="Bpi-Yz-reG" secondAttribute="leading" id="KpY-nJ-pae"/>
+                            <constraint firstItem="CGM-SJ-Dns" firstAttribute="top" secondItem="Bpi-Yz-reG" secondAttribute="top" id="LpF-Fb-ckm"/>
+                            <constraint firstItem="tJM-qf-Xir" firstAttribute="leading" secondItem="aE6-fb-j0M" secondAttribute="leading" id="PCD-y2-6xA"/>
+                            <constraint firstItem="7KK-Ym-XRF" firstAttribute="top" secondItem="Bpi-Yz-reG" secondAttribute="top" id="Toi-R1-5gq"/>
+                            <constraint firstItem="Bpi-Yz-reG" firstAttribute="trailing" secondItem="Gxs-Ew-mgi" secondAttribute="trailing" constant="57" id="bL0-3O-nLT"/>
+                            <constraint firstItem="Bpi-Yz-reG" firstAttribute="bottom" secondItem="CGM-SJ-Dns" secondAttribute="bottom" id="cNJ-I6-SSp"/>
+                            <constraint firstItem="tJM-qf-Xir" firstAttribute="leading" secondItem="Gxs-Ew-mgi" secondAttribute="leading" id="ffH-g1-q6p"/>
+                            <constraint firstItem="aE6-fb-j0M" firstAttribute="leading" secondItem="Bpi-Yz-reG" secondAttribute="leading" constant="57" id="hBN-Ok-y7D"/>
+                            <constraint firstItem="aE6-fb-j0M" firstAttribute="top" secondItem="7KK-Ym-XRF" secondAttribute="bottom" constant="123" id="jRm-wd-8Bb"/>
+                            <constraint firstItem="7KK-Ym-XRF" firstAttribute="leading" secondItem="Bpi-Yz-reG" secondAttribute="leading" id="yEh-hi-NIa"/>
+                            <constraint firstItem="Gxs-Ew-mgi" firstAttribute="leading" secondItem="Bpi-Yz-reG" secondAttribute="leading" constant="57" id="yXc-HC-C2v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bpi-Yz-reG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3Pq-Yb-GBp">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Назад" id="ssy-RI-jgi">
+                            <connections>
+                                <action selector="backButton:" destination="cFW-3H-T5o" id="ZUl-09-H02"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textLabel" destination="7KK-Ym-XRF" id="0Jd-mK-hCT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWY-Kf-u2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,4 +229,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="beans1" width="183" height="324.5"/>
+        <image name="cof1" width="248" height="282.5"/>
+    </resources>
 </document>

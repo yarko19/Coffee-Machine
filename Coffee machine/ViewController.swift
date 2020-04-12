@@ -9,12 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
+    
+    let coffeeMachine = CoffeeMachine()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let ingridientsVC = segue.destination as? IngridientsVC {
+            ingridientsVC.coffeeMachine = coffeeMachine
+        }
+    }
+    
+    @IBAction func drinks(_ sender: UIButton) {
+         var status = ""
+               if sender.tag == 1 {
+               status = coffeeMachine.makeCoffee()
+           }
+               else if sender.tag == 2 {
+               status = coffeeMachine.makeEspresso()
+           }
+               else if sender.tag == 3 {
+               status = coffeeMachine.makeCapuchino()
+           }
+            textLabel?.text = status
+    }
 }
 
