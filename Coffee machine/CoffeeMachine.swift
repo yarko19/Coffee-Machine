@@ -15,7 +15,7 @@ class CoffeeMachine {
     
     init(water: Int,
          beans: Int,
-         milk: Int) {
+         milk: Int)  {
         self.water = water
         self.beans = beans
         self.milk = milk
