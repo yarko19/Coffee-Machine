@@ -95,6 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iWD-Vm-dJS">
                         <barButtonItem key="rightBarButtonItem" title="Добавить ингредиенты &gt;" id="QUD-Jn-WjY">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="cFW-3H-T5o" kind="show" id="OxO-sV-BLt"/>
                             </connections>
@@ -197,6 +198,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3Pq-Yb-GBp">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Назад" id="ssy-RI-jgi">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="backButton:" destination="cFW-3H-T5o" id="ZUl-09-H02"/>
                             </connections>

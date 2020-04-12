@@ -9,9 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     @IBOutlet weak var textLabel: UILabel!
-    
     
     let coffeeMachine = CoffeeMachine()
     
